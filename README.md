@@ -17,6 +17,17 @@ allprojects {
 }
 ```
 
+高版本Gradle:项目根目录`settings.gradle`中添加如下
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
 Step2:添加依赖 [![](https://jitpack.io/v/Idumuzhou/ShapeWidget.svg)](https://jitpack.io/#Idumuzhou/ShapeWidget)
 ```
 implementation 'com.github.Idumuzhou:ShapeWidget:版本号看上面'
